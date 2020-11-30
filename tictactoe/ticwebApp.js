@@ -62,7 +62,7 @@ const checksgamestatus = () => {
     const boxF5 = celldivs[34].classList[2];
     const boxF6 = celldivs[35].classList[2];
 
-    //console.log(box0,    box1 ,    box2 ,    box3 ,    box4 ,    box5 ,    box6 ,    box7 ,    box8 ,    box9 ,    box10,    box11,    box12,    box13,    box14,    box15,    box16,    box17,    box18,    box19,    box20,    box21,    box22,    box23,  box24,    box25,    box26,    box27,    box28,    box29,    box30,    box31,    box32,box33,box34,box35);
+    // console.log(boxA1,boxA2);
  
  //horizontal A line check
     if(boxA1 && boxA1 == boxA2  && boxA1==boxA3 && boxA1==boxA4){
@@ -104,8 +104,8 @@ const checksgamestatus = () => {
     }
      else if(boxD3 && boxD3 == boxD4  && boxD3==boxD5 && boxD3==boxD6){
          winnerfunc(boxD3);
-    }
 
+    }
     //horizontal E line check
     else if(boxE1 && boxE1 == boxE2  && boxE1==boxE3 && boxE1==boxE4){
         winnerfunc(boxE1);
