@@ -87,13 +87,46 @@ const checksgamestatus = () => {
  //horizontal C line check
     else if(boxC1 && boxC1 == boxC2  && boxC1==boxC3 && boxC1==boxC4){
         winnerfunc(boxC1);
-     }
+    }
      else if(boxC2 && boxC2 == boxC3  && boxC2==boxC4 && boxC2==boxC5){
          winnerfunc(boxC2);;
-     }
+    }
      else if(boxC3 && boxC3 == boxC4  && boxC3==boxC5 && boxC3==boxC6){
          winnerfunc(boxC3);
-     }
+    }
+
+    //horizontal D line check
+    else if(boxD1 && boxD1 == boxD2  && boxD1==boxD3 && boxD1==boxD4){
+        winnerfunc(boxD1);
+    }
+     else if(boxD2 && boxD2 == boxD3  && boxD2==boxD4 && boxD2==boxD5){
+         winnerfunc(boxD2);;
+    }
+     else if(boxD3 && boxD3 == boxD4  && boxD3==boxD5 && boxD3==boxD6){
+         winnerfunc(boxD3);
+    }
+
+    //horizontal E line check
+    else if(boxE1 && boxE1 == boxE2  && boxE1==boxE3 && boxE1==boxE4){
+        winnerfunc(boxE1);
+    }
+     else if(boxE2 && boxE2 == boxE3  && boxE2==boxE4 && boxE2==boxE5){
+         winnerfunc(boxE2);;
+    }
+     else if(boxE3 && boxE3 == boxE4  && boxE3==boxE5 && boxE3==boxE6){
+         winnerfunc(boxE3);
+    }
+
+    //horizontal F line check
+    else if(boxF1 && boxF1 == boxF2  && boxF1==boxF3 && boxF1==boxF4){
+        winnerfunc(boxF1);
+    }
+     else if(boxF2 && boxF2 == boxF3  && boxF2==boxF4 && boxF2==boxF5){
+         winnerfunc(boxF2);;
+    }
+     else if(boxF3 && boxF3 == boxF4  && boxF3==boxF5 && boxF3==boxF6){
+         winnerfunc(boxF3);
+    }
 
 };
 
