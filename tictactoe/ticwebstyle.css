@@ -1,15 +1,15 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    color: #545454;
-   display: flex;
-   font-family: sans-serif;
-   justify-content: center;  
+  color: #545454;
+  display: flex;
+  font-family: sans-serif;
+  justify-content: center;
 }
+<<<<<<< HEAD
 .Container {
 
     /* background:#14BDAC; */
@@ -20,66 +20,104 @@ body {
     border-radius: 35px;
    
     /* width: 500px;
+=======
+
+.Container {
+  /* background:#14BDAC; */
+  background: #ff781f;
+  margin: 50px;
+  padding: 50px;
+  border-radius: 35px;
+  /* width: 500px;
+>>>>>>> bbbda7f738008c76ca69dbe64f9b0e8decf50512
     height: 500px; */
+  animation: opacity 1s ease;
 }
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+    top: 0px;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
 .title {
-    text-align: center;
-
-
+  text-align: center;
 }
 .title span {
- color: blanchedalmond;
+  color: blanchedalmond;
 }
 
 .status-action {
-    display: flex;
-    margin-top: 25px;
-    font: 28px;
-    justify-content: space-around;
+  display: flex;
+  margin-top: 25px;
+  font: 28px;
+  justify-content: space-around;
 }
 
 .reset {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .reset:hover {
-    color: cornsilk;
+  color: cornsilk;
 }
 
 .game-grid {
-    /* background: #0DA192; */
-    background: #ffaf7a;
-    display: grid;
-    grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(6,1fr);
-    grid-gap: 5px;
-    margin-top: 50px;
-    
-    
+  /* background: #0DA192; */
+  /* position: relative; */
+  background: #ffaf7a;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 5px;
+  margin-top: 50px;
 }
 
 .game-cell {
-    /* background:#14BDAC; */
-    background:  #ff781f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    height: 100px;
-    width: 100px;
-    
+  /* background:#14BDAC; */
+  position: relative;
+  background: #ff781f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 100px;
+  width: 100px;
+  animation: opacity 2s ease, position 2s ease;
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0%;
+    top: 0px;
+  }
+
+  50% {
+    opacity: 50%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
 
 .x::before {
-    content: '✕';
-    font-size: 50px;
-    font-weight: bold;
-    
+  content: "✕";
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .o::before {
-    content: '○';
-    font-size: 100px;
-    color: cornsilk;
-    
+  content: "○";
+  font-size: 100px;
+  color: cornsilk;
 }
