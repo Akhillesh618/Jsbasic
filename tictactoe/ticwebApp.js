@@ -25,7 +25,7 @@ const winnerfunc = (i_found_winner) => {
 //functions to check winner
 const checksgamestatus = () => {
 
-    const boxA1  = celldivs[0].classList[2];
+    const boxA1 = celldivs[0].classList[2];
     const boxA2 = celldivs[1].classList[2];
     const boxA3 = celldivs[2].classList[2];
     const boxA4 = celldivs[3].classList[2];
@@ -34,7 +34,7 @@ const checksgamestatus = () => {
     const boxB1 = celldivs[6].classList[2];
     const boxB2 = celldivs[7].classList[2];
     const boxB3 = celldivs[8].classList[2];
-    const boxB4= celldivs[9].classList[2];
+    const boxB4 = celldivs[9].classList[2];
     const boxB5 = celldivs[10].classList[2];
     const boxB6 = celldivs[11].classList[2];
     const boxC1 = celldivs[12].classList[2];
@@ -42,8 +42,8 @@ const checksgamestatus = () => {
     const boxC3 = celldivs[14].classList[2];
     const boxC4 = celldivs[15].classList[2];
     const boxC5 = celldivs[16].classList[2];
-    const boxC6= celldivs[17].classList[2];
-    const boxD1= celldivs[18].classList[2];
+    const boxC6 = celldivs[17].classList[2];
+    const boxD1 = celldivs[18].classList[2];
     const boxD2 = celldivs[19].classList[2];
     const boxD3 = celldivs[20].classList[2];
     const boxD4 = celldivs[21].classList[2];
@@ -127,6 +127,21 @@ const checksgamestatus = () => {
      else if(boxF3 && boxF3 == boxF4  && boxF3==boxF5 && boxF3==boxF6){
          winnerfunc(boxF3);
     }
+
+    //Vertical 1 line check
+
+    else if(boxA1 && boxA1 == boxB1  && boxB1==boxC1 && boxC1==boxD1){
+        winnerfunc(boxF1);
+    }
+     else if(boxB1 && boxB1 == boxC1  && boxC1==boxD1 && boxD1==boxE1){
+         winnerfunc(boxF2);;
+    }
+     else if(boxF3 && boxF3 == boxF4  && boxF3==boxF5 && boxF3==boxF6){
+         winnerfunc(boxF3);
+    }
+  
+
+
 
 };
 
